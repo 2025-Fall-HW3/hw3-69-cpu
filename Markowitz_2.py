@@ -46,7 +46,7 @@ class MyPortfolio:
     def __init__(self, price, exclude, 
                  mom_lookback=90, filter_lookback=25, top_k=2, # Main Strategy (M)
                  mom_lookback_short=20, filter_lookback_short=15, top_k_short=2, # Bootstrap Strategy (B)
-                 mom_lookback_ultra_short=5, filter_lookback_ultra_short=5, top_k_ultra_short=4): # Ultra-Short Strategy (C)
+                 mom_lookback_ultra_short=2, filter_lookback_ultra_short=2, top_k_ultra_short=3): # Ultra-Short Strategy (C)
         
         self.price = price
         self.returns = price.pct_change().fillna(0)
